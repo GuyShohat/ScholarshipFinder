@@ -5,7 +5,7 @@ export default function BackToDashboard() {
   return (
     <div style={{ marginTop: "20px" }}>
       <Link
-        to="/admin/dashboard"
+        to="/admin"
         style={{
           color: "#007acc",
           textDecoration: "none",

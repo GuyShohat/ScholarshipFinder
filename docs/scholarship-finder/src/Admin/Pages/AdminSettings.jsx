@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import styles from './AdminSettings.module.css';
-import BackToDashboard from "../Components/BackToDashboard";
 import { useContext } from 'react';
 import { ThemeContext } from "../../ThemeContext";
+import { Link } from "react-router-dom";
 
 
 function AdminSettings() {
@@ -74,7 +74,9 @@ function AdminSettings() {
         <button type="submit">Save Settings</button>
       </form>
 
-      <BackToDashboard />
+      <Link to="/admin" className={styles.backLink}>
+        ← Back to Dashboard
+      </Link>
     </div>
   );
 }

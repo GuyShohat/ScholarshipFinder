@@ -8,7 +8,6 @@ function AdminHeader() {
       <h1 className={styles.title}>Admin Panel</h1>
       <nav className={styles.nav}>
         <ul>
-          <li><Link to="/admin/dashboard">Dashboard</Link></li>
           <li><Link to="/admin/scholarships">Scholarships</Link></li>
           <li><Link to="/admin/applications">Applications</Link></li>
           <li><Link to="/admin/users">Users</Link></li>

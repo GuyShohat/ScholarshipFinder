@@ -48,10 +48,15 @@ function AdminDashboard() {
         </ul>
 
         <div className={styles.backToHome}>
-          <Link to="/">
-            <button>Back to Main Selection</button>
-          </Link>
-        </div>
+  <button
+    onClick={() => {
+      localStorage.removeItem("isAdminAuthenticated");
+      window.location.href = "/admin/login";
+    }}
+  >
+    Logout
+  </button>
+</div>
       </div>
     </div>
   );

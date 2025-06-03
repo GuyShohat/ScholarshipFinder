@@ -44,7 +44,7 @@ function AdminUsers() {
         </tbody>
       </table>
 
-      <Link to="/admin/dashboard" className={styles.backLink}>
+      <Link to="/admin" className={styles.backLink}>
         ← Back to Dashboard
       </Link>
     </div>
