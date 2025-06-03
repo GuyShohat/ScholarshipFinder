@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "./UserLogin.module.css";
+import { Link } from "react-router-dom";
 
 function UserLogin() {
   const [email, setEmail] = useState("");
@@ -51,6 +52,20 @@ navigate("/user/dashboard");
         />
         <button type="submit">Login</button>
       </form>
+<div style={{ textAlign: "center", marginTop: "20px" }}>
+  <Link
+    to="/"
+    style={{
+      color: "#007acc",
+      textDecoration: "none",
+      fontWeight: "bold",
+      fontSize: "14px"
+    }}
+  >
+    ← Back to Home
+  </Link>
+</div>
+
     </div>
   );
 }
