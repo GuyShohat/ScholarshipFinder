@@ -12,6 +12,8 @@ function AdminHeader() {
           <li><Link to="/admin/applications">Applications</Link></li>
           <li><Link to="/admin/users">Users</Link></li>
           <li><Link to="/admin/settings">Settings</Link></li>
+          <li><Link to="/admin/help">Help</Link></li>
+
         </ul>
       </nav>
     </header>
