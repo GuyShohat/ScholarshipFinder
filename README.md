@@ -60,7 +60,7 @@ scholarship-finder/
 │   └── wireframes.docx
 ├── package.json
 └── README.md
-
+```
 כל המסכים ההתחלתיים, התרשימים ושרטוטים זמינים תחת התיקייה /docs
 
 קובץ wireframes.docx מכיל את תכנון המסכים
