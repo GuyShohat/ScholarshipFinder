@@ -1,0 +1,84 @@
+.helpPage {
+  font-family: sans-serif;
+}
+
+.mainContent {
+  padding: 30px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.pageTitle {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.faqSection {
+  margin-bottom: 40px;
+}
+
+.faqItem {
+  margin-bottom: 20px;
+}
+
+.faqItem h3 {
+  font-size: 1.1rem;
+  color: #2b3b4f;
+  margin-bottom: 5px;
+}
+
+.faqItem p {
+  margin: 0;
+  color: #444;
+}
+
+.contactSection {
+  margin-bottom: 40px;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contactForm input,
+.contactForm textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contactForm textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.contactForm button {
+  background-color: #2b3b4f;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.contactForm button:hover {
+  background-color: #1e2a3a;
+}
+
+.backBtn {
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 10px 20px;
+  background-color: #ddd;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.backBtn:hover {
+  background-color: #ccc;
+}

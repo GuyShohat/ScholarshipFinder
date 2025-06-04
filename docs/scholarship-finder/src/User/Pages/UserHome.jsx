@@ -1,7 +1,13 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 
 function UserHome() {
+  const isAuthenticated = localStorage.getItem("isUserAuthenticated") === "true";
+
+  if (isAuthenticated) {
+    return <Navigate to="/user/dashboard" replace />;
+  }
+
   return (
     <div
       style={{
@@ -42,6 +48,18 @@ function UserHome() {
       <Link to="/user/learn" style={{ color: "#003366", fontWeight: "500" }}>
         Learn more
       </Link>
+
+      {/* לינקים תחתונים למשתמש מחובר */}
+      {isAuthenticated && (
+        <div style={{ marginTop: "40px", fontSize: "0.9rem" }}>
+          <Link to="/user/settings" style={{ marginRight: "15px", color: "#666" }}>
+            Settings
+          </Link>
+          <Link to="/user/dashboard" style={{ color: "#666" }}>
+            Back to Dashboard
+          </Link>
+        </div>
+      )}
     </div>
   );
 }

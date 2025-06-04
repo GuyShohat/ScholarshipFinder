@@ -1,7 +1,13 @@
+// src/User/Pages/UserLogin.jsx
+
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "./UserLogin.module.css";
 import { Link } from "react-router-dom";
+import {
+  getAllUsers,
+  saveAllUsers
+} from "../utlis/userstorage";
 
 function UserLogin() {
   const [email, setEmail] = useState("");
@@ -24,12 +30,35 @@ function UserLogin() {
       return;
     }
 
-    // שמור התחברות של יוזר (לא אדמין!)
-// בתוך handleLogin
-localStorage.setItem("isUserAuthenticated", "true");
-navigate("/user/dashboard");
+    const userId = btoa(email.toLowerCase());
+    const users = getAllUsers();
+
+    if (!users[userId]) {
+      users[userId] = {
+        email,
+        password,
+        savedScholarships: [],
+        submittedApplications: [],
+        matchedScholarships: [],
+        settings: {
+          theme: "light",
+          firstName: "",
+          lastName: ""
+        }
+      };
+      saveAllUsers(users);
+    } else {
+      if (users[userId].password !== password) {
+        alert("סיסמה שגויה.");
+        return;
+      }
+    }
+
+    localStorage.setItem("isUserAuthenticated", "true");
+    localStorage.setItem("currentUserId", userId); // ✅
 
 
+    navigate("/user/dashboard");
   };
 
   return (
@@ -52,20 +81,20 @@ navigate("/user/dashboard");
         />
         <button type="submit">Login</button>
       </form>
-<div style={{ textAlign: "center", marginTop: "20px" }}>
-  <Link
-    to="/"
-    style={{
-      color: "#007acc",
-      textDecoration: "none",
-      fontWeight: "bold",
-      fontSize: "14px"
-    }}
-  >
-    ← Back to Home
-  </Link>
-</div>
 
+      <div style={{ textAlign: "center", marginTop: "20px" }}>
+        <Link
+          to="/"
+          style={{
+            color: "#007acc",
+            textDecoration: "none",
+            fontWeight: "bold",
+            fontSize: "14px"
+          }}
+        >
+          ← Back to Home
+        </Link>
+      </div>
     </div>
   );
 }
