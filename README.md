@@ -47,6 +47,7 @@ npm run dev
 
 
 מבנה:
+```bash
 scholarship-finder/
 ├── public/
 ├── src/
@@ -57,9 +58,8 @@ scholarship-finder/
 │   └── ThemeContext.js
 ├── docs/
 │   └── wireframes.docx
-├── README.md
 ├── package.json
-└── ...
+└── README.md
 
 כל המסכים ההתחלתיים, התרשימים ושרטוטים זמינים תחת התיקייה /docs
 
