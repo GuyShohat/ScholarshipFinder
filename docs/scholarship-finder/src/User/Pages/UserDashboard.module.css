@@ -1,0 +1,87 @@
+.dashboard {
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.statsRow {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.section {
+  width: 100%;
+  overflow-x: auto;
+  margin-bottom: 40px;
+}
+
+/* טבלת דדליינים */
+.table {
+  width: 100%;
+  min-width: 600px;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.05);
+}
+
+.table th,
+.table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  color: #222;
+}
+
+.table th {
+  background-color: #f3f3f3;
+  font-weight: bold;
+}
+
+.chartPlaceholder {
+  height: 200px;
+  background-color: #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  border-radius: 8px;
+  border: 1px dashed #aaa;
+  font-size: 1rem;
+}
+
+.logoutContainer {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.logoutBtn {
+  background-color: #aa0000;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.logoutBtn:hover {
+  background-color: #880000;
+}
+
+

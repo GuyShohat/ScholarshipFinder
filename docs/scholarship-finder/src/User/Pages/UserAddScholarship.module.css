@@ -1,0 +1,147 @@
+.container {
+  font-family: sans-serif;
+}
+
+.inner {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: var(--bg-color, #f9f9f9);
+  border-radius: 8px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--text-color, #333);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form label {
+  font-weight: bold;
+  color: var(--text-color, #222);
+}
+
+.form input,
+.form textarea,
+.form select {
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+}
+
+.form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.matchingSection {
+  margin-top: 25px;
+  padding: 15px 20px;
+  background-color: #f0f4f8;
+  border: 2px solid #999;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.matchingSection h3 {
+  margin: 0;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #222;
+}
+
+.matchingOptionsRow {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.matchingOptionCard {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.matchingOptionCard:hover {
+  background-color: #e6f2ff;
+}
+
+.matchingOptionCard input {
+  transform: scale(1.2);
+}
+
+
+
+.error {
+  color: red;
+  text-align: center;
+  font-weight: bold;
+}
+
+button[type="submit"] {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: var(--primary-color, #2b3b4f);
+  color: blue;
+  border: none;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: var(--primary-hover, #1e2a3a);
+}
+.form button[type="submit"] {
+  background-color: #007acc;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.form button[type="submit"]:hover {
+  background-color: #005f99;
+}
+
+.backBtn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #ccc;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  color: black;
+}
+
+.backBtn:hover {
+  background-color: #bbb;
+}

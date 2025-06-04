@@ -1,0 +1,50 @@
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #e6f0ff, #f2f2f2);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.title {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+  color: #666;
+  text-align: center;
+  max-width: 600px;
+}
+
+.getStartedButton {
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  background-color: #007acc;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.getStartedButton:hover {
+  background-color: #005f99;
+}
+
+.linkToSettings {
+  margin-top: 20px;
+  font-size: 0.95rem;
+  color: #007acc;
+  text-decoration: none;
+}
+
+.linkToSettings:hover {
+  text-decoration: underline;
+}
