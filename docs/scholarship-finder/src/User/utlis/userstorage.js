@@ -19,7 +19,6 @@ export function saveUserData(userId, data) {
   const users = getAllUsers();
   const current = users[userId] || {};
 
-  // שמירה בטוחה עם מיזוג כל המידע הקיים
   users[userId] = {
     ...current,
     ...data,

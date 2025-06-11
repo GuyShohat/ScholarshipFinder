@@ -1,4 +1,4 @@
-/* Light Theme */
+
 [data-theme="light"] {
   --bg-color: #ffffff;
   --text-color: #000000;
@@ -8,7 +8,7 @@
   --chart-bg: #e2e2e2;
 }
 
-/* Dark Theme */
+
 [data-theme="dark"] {
   --bg-color: #1e1e1e;
   --text-color: #f5f5f5;
@@ -18,7 +18,7 @@
   --chart-bg: #444;
 }
 
-/* Metallic Theme */
+
 [data-theme="metallic"] {
   --bg-color: #BCC6CC;
   --text-color: #2d2d2d;
@@ -28,7 +28,7 @@
   --chart-bg: #555;
 }
 
-/* Apply to body by default */
+
 body {
   background-color: var(--bg-color);
   color: var(--text-color);
